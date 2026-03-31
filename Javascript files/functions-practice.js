@@ -6,7 +6,7 @@ console.log("=== FUNCTION PRACTICE TEST ===");
 // "Hello JS!"
 //
 function sayHello() {
-  // your code
+  console.log("Hello JS!");
 }
 
 console.log("1) sayHello():");
@@ -19,7 +19,8 @@ sayHello();
 // "Hello, <name>!"
 //
 function greet(name) {
-  // your code
+  console.log("Hello " + name + "!");
+
 }
 
 console.log("\n2) greet():");
@@ -33,7 +34,7 @@ greet("Manila");
 // Return the sum.
 //
 function add(a, b) {
-  // your code
+  return a + b;
 }
 
 console.log("\n3) add():", add(5, 9)); // Expect 14
@@ -43,9 +44,7 @@ console.log("\n3) add():", add(5, 9)); // Expect 14
 // 4. Arrow function version of add()
 // Write: const addArrow = (a, b) => ??? 
 //
-const addArrow = (a, b) => {
-  // your code
-};
+const addArrow = (a, b) =>  a + b;
 
 console.log("\n4) addArrow():", addArrow(10, 2)); // Expect 12
 
@@ -56,7 +55,7 @@ console.log("\n4) addArrow():", addArrow(10, 2)); // Expect 12
 // positive(-2) → false
 //
 function positive(num) {
-  // your code
+  return num > 0;
 }
 
 console.log("\n5) positive():", positive(5), positive(-2));
@@ -67,7 +66,7 @@ console.log("\n5) positive():", positive(5), positive(-2));
 // firstChar("Hello") → "H"
 //
 function firstChar(str) {
-  // your code
+  return str[0];
 }
 
 console.log("\n6) firstChar():", firstChar("Hello"));
@@ -77,9 +76,7 @@ console.log("\n6) firstChar():", firstChar("Hello"));
 // 7. Convert this to an arrow function:
 // function square(n) { return n * n; }
 //
-const square = (n) => {
-  // your code
-};
+const square = (n) => n * n;
 
 console.log("\n7) square():", square(6)); // Expect 36
 
@@ -89,7 +86,7 @@ console.log("\n7) square():", square(6)); // Expect 36
 // longer("cat", "giraffe") → "giraffe"
 //
 function longer(a, b) {
-  // your code
+    return a.length > b.length ? a : b; // explain: if a is longer than b, return a, else return b
 }
 
 console.log("\n8) longer():", longer("cat", "giraffe"));
@@ -102,6 +99,7 @@ console.log("\n8) longer():", longer("cat", "giraffe"));
 //
 function evenOrOdd(n) {
   // your code
+  return n % 2 === 0 ? "even" : "odd"; // explain: if n is divisible by 2, return "even", else return "odd"
 }
 
 console.log("\n9) evenOrOdd():", evenOrOdd(7), evenOrOdd(12));
@@ -118,3 +116,6 @@ function repeat(word, times) {
 }
 
 console.log("\n10) repeat():", repeat("Hi", 3));
+
+
+
