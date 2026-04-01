@@ -7,6 +7,10 @@
 // var tweetCount = tweetLimit.length;
 // alert("You have written " + tweetCount + " characters, you have " + (140 - tweetCount) + " characters left.");
 
-var name = prompt("What is your name?")
-var name = name.slice(0,1).toUpperCase() + name.slice(1, name.length).toLowerCase();
-alert("Hello, " + name + "!");
+// var name = prompt("What is your name?")
+// var name = name.slice(0,1).toUpperCase() + name.slice(1, name.length).toLowerCase();
+// alert("Hello, " + name + "!");
+
+var dogAge = prompt("How old is your dog?");
+var humanAge = (dogAge - 2) * 4 + 21;
+alert("Your dog is " + humanAge + " years old in human years.");
