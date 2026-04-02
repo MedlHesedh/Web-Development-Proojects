@@ -11,6 +11,26 @@
 // var name = name.slice(0,1).toUpperCase() + name.slice(1, name.length).toLowerCase();
 // alert("Hello, " + name + "!");
 
-var dogAge = prompt("How old is your dog?");
-var humanAge = (dogAge - 2) * 4 + 21;
-alert("Your dog is " + humanAge + " years old in human years.");
+// var dogAge = prompt("How old is your dog?")
+// var humanAGe = (dogAge - 2) * 4 + 21;
+// alert("Your dog is " + humanAGe + " years old in human years.");
+
+// function getMilk(money) { 
+//   var numberOfBottles = Math.floor(money / 1.49);
+//   console.log("buy " + numberOfBottles + " bottles of milk using $" + money + " of money");
+// }
+
+// getMilk(5);
+
+function lifeInWeeks(age) {
+    
+    var yearsLeft = 90 - age;
+    var days = yearsLeft * 365;
+    var weeks = yearsLeft * 52;
+    var months = yearsLeft * 12;
+
+    console.log("You have " + days + " days, " + weeks + " weeks, and " + months + " months left.");
+    
+}
+
+lifeInWeeks(24);
