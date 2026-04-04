@@ -15,22 +15,25 @@
 // var humanAGe = (dogAge - 2) * 4 + 21;
 // alert("Your dog is " + humanAGe + " years old in human years.");
 
-// function getMilk(money) { 
-//   var numberOfBottles = Math.floor(money / 1.49);
-//   console.log("buy " + numberOfBottles + " bottles of milk using $" + money + " of money");
-// }
-
-// getMilk(5);
-
-function lifeInWeeks(age) {
-    
-    var yearsLeft = 90 - age;
-    var days = yearsLeft * 365;
-    var weeks = yearsLeft * 52;
-    var months = yearsLeft * 12;
-
-    console.log("You have " + days + " days, " + weeks + " weeks, and " + months + " months left.");
-    
+function getMilk(money) { 
+  var numberOfBottles = Math.floor(money / 1.49);
+  var change = money % 1.49;
+  console.log("buy " + numberOfBottles + " bottles of milk using $" + money + " of money");
+  return money % 1.49;
 }
 
-lifeInWeeks(24);
+var change = getMilk(5);
+console.log("The change is $" + change + ".");
+
+// function lifeInWeeks(age) {
+    
+//     var yearsLeft = 90 - age;
+//     var days = yearsLeft * 365;
+//     var weeks = yearsLeft * 52;
+//     var months = yearsLeft * 12;
+
+//     console.log("You have " + days + " days, " + weeks + " weeks, and " + months + " months left.");
+    
+// }
+
+// lifeInWeeks(24);
