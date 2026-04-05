@@ -23,7 +23,7 @@ function getMilk(money) {
 }
 
 var change = getMilk(5);
-console.log("The change is $" + change + ".");
+console.log("The change is $" + change + ".");    
 
 // function lifeInWeeks(age) {
     
